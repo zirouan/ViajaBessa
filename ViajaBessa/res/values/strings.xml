@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Navigation -->    
+    <string name="header">User</string>    
+        
+    <string name="app_name">Viaja Bessa</string>
+    <string name="clear"></string>
+    <string name="add">Add</string>
+    <string name="search">Search</string>
+    <string name="update">Update</string>
+
+    <string name="shared">Shared</string>
+    <string name="favorite">favorite</string>    
+    
+    <string name="buy">Buy</string>    
+    <string name="description">Description</string>        
+    
+    <string name="done">Buy</string>
+    <string name="discard">Discard</string>
+        
+    <string name="apartment">Apartment</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="giveaways">Giveaways</string>
+    <string name="ingress">Ingress</string>
+    <string name="air_travel">Air Travel</string>
+    <string name="transfer">Transfer</string>
+    
+    <string name="price">Price:</string>        
+    
+    <string name="drawer_open">Open drawer navigation</string>
+    <string name="drawer_close">Navigation drawer Close</string>
+    
+    <string name="titulo_user">Rudson Lima</string>
+    <string name="subtitulo_user">rudsonlive@gmail.com</string>   
+
+    <string name="tab_one">Packages</string>
+    <string name="tab_two">Favorites</string>
+    
+    <string name="thanks_for_buying">Thanks for buying</string>
+        
+    <string name="title_package_details">Package Details</string>        
+    
+    <string name="included_package">Included in the package</string>        
+    
+    <string name="connection_unavailable">Connection unavailable, please activate your mobile network or Wi-Fi</string>
+    <string name="ops">Ops, Do not cry o-O!</string>    
+</resources >

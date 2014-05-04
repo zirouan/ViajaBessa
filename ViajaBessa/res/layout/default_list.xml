@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray_ligth" >
+
+    <RelativeLayout
+        android:id="@+id/layout_no_Records"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/txtOps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgCry"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:text="@string/ops" />
+
+        <ImageView
+            android:id="@+id/imgCry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="98dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/cry" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listPackages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_no_Records"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:scrollbarStyle="outsideOverlay" >
+    </ListView>
+ 
+</RelativeLayout>

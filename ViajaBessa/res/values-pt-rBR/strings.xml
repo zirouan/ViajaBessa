@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Navigation -->    
+    <string name="header">Usuário</string>    
+        
+    <string name="app_name">Viaja Bessa</string>
+    
+    <string name="clear"></string>
+    <string name="add">Adicionar</string>
+    <string name="search">Pesquisar</string>
+    <string name="update">atualizar</string>
+        
+    <string name="shared">Compartilhar</string>
+    <string name="favorite">Favorito</string>    
+            
+    <string name="buy">Comprar</string>    
+    <string name="description">Descrição</string>
+        
+    <string name="done">Comprar</string>
+    <string name="discard">Descartar</string>
+    
+    <string name="apartment">Apartamento</string>
+    <string name="breakfast">Café da manhã</string>
+    <string name="giveaways">Brindes</string>
+    <string name="ingress">Ingresso</string>
+    <string name="air_travel">Passagem Aérea</string>
+    <string name="transfer">Translado</string>
+
+    <string name="price">Preço:</string>    
+    
+    <string name="drawer_open">Abrir drawer navigation</string>
+    <string name="drawer_close">Navigation drawer Fechar</string>  
+    
+    <string name="titulo_user">Rudson Lima</string>
+    <string name="subtitulo_user">rudsonlive@gmail.com</string>   
+
+    <string name="tab_one">Pacotes</string>
+    <string name="tab_two">Favoritos</string>
+    
+    <string name="thanks_for_buying">Obrigado pela compra.</string>    
+    
+    <string name="title_package_details">Detalhes Pacote</string>
+    <string name="included_package">Incluso no pacote</string>        
+    
+    <string name="connection_unavailable">Conexão indisponível, por favor ative sua rede móvel ou Wi-Fi.</string>
+    <string name="ops">Ops, Não chore o-O!</string>      
+</resources >

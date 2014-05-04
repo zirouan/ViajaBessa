@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linha_tabela"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rodape"
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/gray_ligth"
+        android:paddingBottom="5dp" >
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgPackage"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/imgPackage_layout_height"
+        android:layout_below="@+id/rodape"
+        android:background="@drawable/seletor_item_butao_lista"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_img" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        style="@style/textView_title_packages"
+        android:layout_alignBottom="@+id/imgPackage" />
+
+    <RelativeLayout
+        android:id="@+id/layout_dados"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgPackage" >
+
+        <TextView
+            android:id="@+id/txtValue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/app_name"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_botoes"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/layout_dados"
+        android:layout_marginBottom="5dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/layout_People"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/iconPeople"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_action_person" />
+
+            <TextView
+                android:id="@+id/txtPeople"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iconPeople"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignRight="@+id/txtPeople"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray_ligth" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_Favorite"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/iconFavorite"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_action_favorite" />
+
+            <TextView
+                android:id="@+id/txtFavorite"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iconFavorite"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/favorite"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignRight="@+id/txtFavorite"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray_ligth" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_Shared"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/iconShared"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_action_share" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iconShared"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/shared"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

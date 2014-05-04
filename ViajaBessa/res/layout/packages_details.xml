@@ -1,0 +1,317 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray_ligth" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/imgPackage"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/imgPackage_layout_height"
+            android:background="@drawable/seletor_item_butao_lista"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_img" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/textView_title_buy_packages"
+            android:layout_alignBottom="@+id/imgPackage" />
+
+        <RelativeLayout
+            android:id="@+id/layout_Included"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgPackage"
+            android:background="@color/gray_ligth"
+            android:padding="6dp" >
+
+            <RelativeLayout
+                android:id="@+id/layout_dados"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/txtIncluded"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/included_package"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layout_packages_one"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/txtIncluded"
+                    android:layout_marginBottom="5dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/layout_Apartment"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:clickable="true" >
+
+                        <ImageView
+                            android:id="@+id/iconApartment"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_apartment" />
+
+                        <TextView
+                            android:id="@+id/txtApartment"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iconApartment"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/apartment"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/txtApartment"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/gray_ligth" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_Airtravel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:clickable="true" >
+
+                        <ImageView
+                            android:id="@+id/iconAirtravel"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_air_travel" />
+
+                        <TextView
+                            android:id="@+id/txtAirtravel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iconAirtravel"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/air_travel"
+                            android:textColor="@color/gray"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/txtAirtravel"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/gray_ligth" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_Ingress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:clickable="true" >
+
+                        <ImageView
+                            android:id="@+id/iconIngress"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_ingress" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iconIngress"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/ingress"
+                            android:textColor="@color/gray"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_packages_two"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/layout_packages_one"
+                    android:layout_marginBottom="5dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/layout_Giveaways"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:clickable="true" >
+
+                        <ImageView
+                            android:id="@+id/iconGiveaways"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_giveaways" />
+
+                        <TextView
+                            android:id="@+id/txtGiveaways"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iconGiveaways"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/giveaways"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/txtGiveaways"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/gray_ligth" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_Breakfast"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:clickable="true" >
+
+                        <ImageView
+                            android:id="@+id/iconBreakfast"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_breakfast" />
+
+                        <TextView
+                            android:id="@+id/txtBreakfast"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iconBreakfast"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/breakfast"
+                            android:textColor="@color/gray"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/txtBreakfast"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/gray_ligth" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_Transfer"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:clickable="true" >
+
+                        <ImageView
+                            android:id="@+id/iconTransfer"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_transfer" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iconTransfer"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/transfer"
+                            android:textColor="@color/gray"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <fragment
+            android:id="@+id/fragmentMapa"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fragmentMap_layout_height"
+            android:layout_below="@+id/layout_Included" />
+        
+        <RelativeLayout
+            android:id="@+id/layout_Description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragmentMapa"
+            android:background="@color/gray_ligth"
+            android:padding="6dp" >
+
+            <RelativeLayout
+                android:id="@+id/layout_dados_Description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/txtTitleDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/description"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/txtTitleDescription"
+                    android:layout_marginTop="3dp"
+                    android:padding="4dp"
+                    android:text="@string/app_name"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+        </RelativeLayout>        
+    </RelativeLayout>
+
+</ScrollView>

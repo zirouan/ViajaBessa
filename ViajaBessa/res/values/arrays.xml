@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="nav_menu_items">
+        <item>Home</item>
+        <item>My Packages</item>        
+        <item>Shop +</item>
+        <item>My wishilist</item>
+        <item>Redeem</item>
+        <item>SETTINGS</item>
+        <item>HELP</item>               
+    </string-array>   
+</resources>

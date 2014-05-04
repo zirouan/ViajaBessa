@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionbar_done"
+    style="?android:actionButtonStyle"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/transparent" >
+
+    <TextView
+        style="@style/Widget.AppCompat.ActionBar.TabText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_action_accept"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:paddingRight="20dp"
+        android:textColor="@color/white"        
+        android:text="@string/done" />    
+</FrameLayout>

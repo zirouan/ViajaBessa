@@ -1,0 +1,74 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+	<style name="ViajaBessaActionBarTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/ViajaBessaActionBar</item>	    	    
+    </style>
+    
+    <style name="ViajaBessaActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="titleTextStyle">@style/ViajaBessa.TitleTextStyle</item>
+        <item name="subtitleTextStyle">@style/ViajaBessa.SubTitleTextStyle</item>               
+        <item name="background">@color/blue_dark</item>                
+    </style>
+    
+    <style name="ViajaBessa.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>    
+
+    <style name="ViajaBessa.SubTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>  
+    
+	<style name="ViajaBessaBuyActionBarTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/ViajaBessaBuyActionBar</item>	    	    
+    </style>
+    
+    <style name="ViajaBessaBuyActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="titleTextStyle">@style/ViajaBessa.TitleTextStyle</item>
+        <item name="subtitleTextStyle">@style/ViajaBessa.SubTitleTextStyle</item>               
+        <item name="background">@color/green_dark</item>                
+    </style>
+    
+    
+    <!-- Style items packages -->
+    <style name="textView_title_packages" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/bg_transparent</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>     
+
+    <!-- Style buy packages -->
+    <style name="textView_title_buy_packages" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/bg_buy_transparent</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>     
+</resources>
