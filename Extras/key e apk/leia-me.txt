@@ -1,0 +1,4 @@
+Coloquei o key "ViajaBessa" caso queiram gerar um apk 
+pra ver o funcionamento do mapa.
+
+Senha: rudsonlive
